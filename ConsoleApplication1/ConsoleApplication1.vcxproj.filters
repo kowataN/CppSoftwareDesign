@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Guideline9">
+      <UniqueIdentifier>{77f34144-c486-4960-8e50-9c76ba29b3e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Guideline2">
+      <UniqueIdentifier>{65debb40-c922-4b70-b46a-4a799c3b97e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Guideline9">
+      <UniqueIdentifier>{4d7976a6-b151-4ff2-8423-f17e8b570bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Guideline2">
+      <UniqueIdentifier>{3e69e7a2-0523-4502-8479-9df48f1fda00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Guideline11">
+      <UniqueIdentifier>{8be3f2d2-247d-4098-9fd0-bd74be30ffd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Guideline11">
+      <UniqueIdentifier>{43bb971c-8d34-408f-a253-71da94fabbfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Guideline12">
+      <UniqueIdentifier>{0a9b21c9-6b8a-40fc-bdab-78eab84fb1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Guideline12">
+      <UniqueIdentifier>{acd39ed7-460b-4c2a-a67d-bee7c6f98327}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Guidline11\Guideline11.h">
+      <Filter>ヘッダー ファイル\Guideline11</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\ConferenceTicket.h">
+      <Filter>ヘッダー ファイル\Guideline2</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\CppBook.h">
+      <Filter>ヘッダー ファイル\Guideline2</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\Item.h">
+      <Filter>ヘッダー ファイル\Guideline2</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\Money.h">
+      <Filter>ヘッダー ファイル\Guideline2</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline9\Guideline9.h">
+      <Filter>ヘッダー ファイル\Guideline9</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\Guideline2.h">
+      <Filter>ヘッダー ファイル\Guideline2</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline12\Guideline12.h">
+      <Filter>ヘッダー ファイル\Guideline12</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Guideline9\Guideline9.cpp">
+      <Filter>ソース ファイル\Guideline9</Filter>
+    </ClCompile>
+    <ClCompile Include="Guideline2\Guideline2.cpp">
+      <Filter>ソース ファイル\Guideline2</Filter>
+    </ClCompile>
+    <ClCompile Include="Guideline12\Guideline12.cpp">
+      <Filter>ソース ファイル\Guideline12</Filter>
+    </ClCompile>
+    <ClCompile Include="Guideline11\Guideline11.cpp">
+      <Filter>ソース ファイル\Guideline11</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+</Project>
