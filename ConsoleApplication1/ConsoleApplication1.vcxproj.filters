@@ -39,9 +39,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Guidline11\Guideline11.h">
-      <Filter>ヘッダー ファイル\Guideline11</Filter>
-    </ClInclude>
     <ClInclude Include="Guideline2\ConferenceTicket.h">
       <Filter>ヘッダー ファイル\Guideline2</Filter>
     </ClInclude>
@@ -63,6 +60,9 @@
     <ClInclude Include="Guideline12\Guideline12.h">
       <Filter>ヘッダー ファイル\Guideline12</Filter>
     </ClInclude>
+    <ClInclude Include="Guideline11\Guideline11.h">
+      <Filter>ヘッダー ファイル\Guideline11</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -80,10 +80,5 @@
     <ClCompile Include="Guideline11\Guideline11.cpp">
       <Filter>ソース ファイル\Guideline11</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
 </Project>
