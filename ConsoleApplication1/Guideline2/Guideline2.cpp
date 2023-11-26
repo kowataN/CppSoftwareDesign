@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <cstdlib>
 #include <memory>
+#include <numeric>
 #include <vector>
 
 #include "CppBook.h"
@@ -14,7 +15,7 @@
 
 void Guideline2()
 {
-    std::vector<std::unique_ptr<Item>> Items {};
+    //std::vector<std::unique_ptr<Item>> Items {};
 
     //Items.emplace_back(std::make_unique<CppBook>("Effective C++", "Scott", 19.99));
     //Items.emplace_back(std::make_unique<CppBook>("C++ Templates", "Scott", 49.99));
