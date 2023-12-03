@@ -20,6 +20,8 @@ struct Print
 
 void Guideline14()
 {
+    std::cout << "\nGuideline14 ---------\n";
+
     std::variant<int, double, std::string> v{};
 
     v = "C++ Variant example";

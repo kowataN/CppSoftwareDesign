@@ -43,6 +43,12 @@
     <Filter Include="ソース ファイル\Guideline14">
       <UniqueIdentifier>{7661f723-24ac-4f1f-a842-69dc102fc512}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Guideline15">
+      <UniqueIdentifier>{d36efd2d-f739-4459-a94a-fb8989e574a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Guideline15">
+      <UniqueIdentifier>{23a930fe-ccfa-429f-951c-73c3894d5bbb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Guideline2\ConferenceTicket.h">
@@ -72,6 +78,9 @@
     <ClInclude Include="Guideline14\Guideline14.h">
       <Filter>ヘッダー ファイル\Guideline14</Filter>
     </ClInclude>
+    <ClInclude Include="Guideline15\Guideline15.h">
+      <Filter>ヘッダー ファイル\Guideline15</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -91,6 +100,12 @@
     </ClCompile>
     <ClCompile Include="Guideline14\Guideline14.cpp">
       <Filter>ソース ファイル\Guideline14</Filter>
+    </ClCompile>
+    <ClCompile Include="Guideline15\Guideline15.cpp">
+      <Filter>ソース ファイル\Guideline15</Filter>
+    </ClCompile>
+    <ClCompile Include="Guideline15\Guideline15_2.cpp">
+      <Filter>ソース ファイル\Guideline15</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

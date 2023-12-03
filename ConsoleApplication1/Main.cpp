@@ -7,12 +7,14 @@
 
 #include "Guideline2/Guideline2.h"
 #include "Guideline14/Guideline14.h"
-
+#include "Guideline15/Guideline15.h"
 
 int main()
 {
     Guideline2();
     Guideline14();
+    Guideline15();
+    Guideline15_2();
 
     _getch();
 
