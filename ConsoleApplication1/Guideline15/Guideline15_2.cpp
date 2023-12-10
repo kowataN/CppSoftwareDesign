@@ -38,7 +38,7 @@ public:
     explicit Circle(double radius)
         : radius_(radius)
     {
-        /* 渡された半径の妥当性を検証 valid */
+        /* 渡された半径の妥当性を検証 */
     }
 
     double radius() const { return radius_; }
