@@ -97,10 +97,10 @@ private:
 
 
 /////////////////////////////////////////////////////////////////
-// Gideline9 2-2 ƒvƒ‰ƒOƒCƒ“ƒA[ƒLƒeƒNƒ`ƒƒ
+// Gideline9 2-2 ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£
 
 //---------------------------
-// ŠÔˆá‚Á‚½•û
+// é–“é•ã£ãŸæ–¹
 
 // <thirdparty/Plugin.h>
 class Plugin {};
@@ -113,15 +113,15 @@ class VimModePlugin : public Plugin {};
 //#include "thirdparty/VimModePlugin.h"
 class Editor {};
 
-// „Ÿ„¦„Ÿ thirdparty
-//   b     „¥ Plugin.h ‰ºˆÊ
-//   b     „¤ VimModePlugin.h ‰ºˆÊ
-// @„¤„Ÿ yourcode
-//          „¤ Editor.h ãˆÊ
+// â”€â”¬â”€ thirdparty
+//   ï½œ     â”œ Plugin.h ä¸‹ä½
+//   ï½œ     â”” VimModePlugin.h ä¸‹ä½
+// ã€€â””â”€ yourcode
+//          â”” Editor.h ä¸Šä½
 
 
 //---------------------------
-// ˆË‘¶ŠÖŒW‚ğC³‚µ‚½•û
+// ä¾å­˜é–¢ä¿‚ã‚’ä¿®æ­£ã—ãŸæ–¹
 
 // <yourcode/Plugin.h>
 class Plugin {};
@@ -134,8 +134,8 @@ class Editor {};
 //#include "yourcode/Plugin.h"
 class VimModePlugin : public Plugin {};
 
-// „Ÿ„¦„Ÿ thirdparty
-//   b     „¤ VimModePlugin.h ‰ºˆÊ
-// @„¤„Ÿ yourcode
-//   @     „¥ Plugin.h ãˆÊ
-//          „¤ Editor.h ãˆÊ
+// â”€â”¬â”€ thirdparty
+//   ï½œ     â”” VimModePlugin.h ä¸‹ä½
+// ã€€â””â”€ yourcode
+//   ã€€     â”œ Plugin.h ä¸Šä½
+//          â”” Editor.h ä¸Šä½

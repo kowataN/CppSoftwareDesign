@@ -1,5 +1,12 @@
 #include <iostream>
 
+#define NS_G15_START namespace G15 {
+#define NS_G15_END }
+
+NS_G15_START
+
+// 手続き型プログラミングの解
+
 /////////////////////////////////////////////////////////////////
 // Point.h
 struct Point
@@ -44,7 +51,7 @@ public:
         : Shape(circle)
         , radius_(radius)
     {
-        /* �n���ꂽ���a�̑Ó��������� */
+        /* 渡された半径の妥当性を検証 */
     }
 
     double radius() const { return radius_; }
@@ -55,22 +62,29 @@ private:
     Point center_{};
 };
 
+NS_G15_END
+
 /////////////////////////////////////////////////////////////////
 // DrawCircle.h
+NS_G15_START
 class Circle;
-void draw(Circle const&);
+NS_G15_END
+
+void draw_G15(G15::Circle const&);
 
 /////////////////////////////////////////////////////////////////
 // DrawCircle.cpp
 //#include <Circle.h>
 //#include <DrawCircle.h>
-//#include /* ���炩�̃O���t�B�b�N���C�u���� */
+//#include /* 何らかのグラフィックライブラリ */
 
-void draw(Circle const& circle)
+void draw_G15(G15::Circle const& circle)
 {
-    // �~��`�悷�鏈��������
-    std::cout << "�~��`��\n";
+    // 円を描画する処理を実装
+    std::cout << "円を描画\n";
 }
+
+NS_G15_START
 
 /////////////////////////////////////////////////////////////////
 // Square.h
@@ -85,7 +99,7 @@ public:
         : Shape(square)
         , side_(side)
     {
-        /* �n���ꂽ�ӂ̒����̑Ó��������� */
+        /* 渡された辺の長さの妥当性を検証 */
     }
 
     double side() const { return side_; }
@@ -93,34 +107,40 @@ public:
 
 private:
     double side_;
-    Point center_{}; // ���S�Ɍ��炸�A���_�ł���
+    Point center_{}; // 中心に限らず、頂点でもよ
 };
+
+NS_G15_END
 
 /////////////////////////////////////////////////////////////////
 // DrawSquare.h
+NS_G15_START
 class Square;
+NS_G15_END
 
-void draw(Square const& square);
+void draw_G15(G15::Square const& square);
 
 /////////////////////////////////////////////////////////////////
 // DrawSquare.cpp
 //#include <DrawSquare.h>
 //#include <Square.h>
-//#include /* ���炩�̃O���t�B�b�N���C�u���� */
+//#include /* 何らかのグラフィックライブラリ */
 
-void draw(Square const& square)
+void draw_G15(G15::Square const& square)
 {
-    // �����`��`�悷�鏈��������
-    std::cout << "�����`��`��\n";
+    // 正方形を描画する処理を実装
+    std::cout << "正方形を描画\n";
 }
 
 /////////////////////////////////////////////////////////////////
 // DrawAllShapes.h
 #include <memory>
 #include <vector>
+NS_G15_START
 class Shape;
+NS_G15_END
 
-void drawAllShapes(std::vector<std::unique_ptr<Shape>> const& shapes);
+void drawAllShapes_G15(std::vector<std::unique_ptr<G15::Shape>> const& shapes);
 
 /////////////////////////////////////////////////////////////////
 // DrawAllShapes.cpp
@@ -128,17 +148,17 @@ void drawAllShapes(std::vector<std::unique_ptr<Shape>> const& shapes);
 //#include <Circle.h>
 //#include <Square.h>
 
-void drawAllShapes(std::vector<std::unique_ptr<Shape>> const& shapes)
+void drawAllShapes_G15(std::vector<std::unique_ptr<G15::Shape>> const& shapes)
 {
     for (auto const& shape : shapes)
     {
         switch (shape->getType())
         {
-        case circle:
-            draw(static_cast<Circle const&>(*shape));
+        case G15::circle:
+            draw_G15(static_cast<G15::Circle const&>(*shape));
             break;
-        case square:
-            draw(static_cast<Square const&>(*shape));
+        case G15::square:
+            draw_G15(static_cast<G15::Square const&>(*shape));
             break;
         }
     }
@@ -155,14 +175,14 @@ void Guideline15()
 {
     std::cout << "\nGuideline15 ---------\n";
 
-    using Shapes = std::vector<std::unique_ptr<Shape>>;
+    using Shapes = std::vector<std::unique_ptr<G15::Shape>>;
 
     // Creating some shapes
     Shapes shapes{};
-    shapes.emplace_back(std::make_unique<Circle>(2.3));
-    shapes.emplace_back(std::make_unique<Square>(1.2));
-    shapes.emplace_back(std::make_unique<Circle>(4.1));
+    shapes.emplace_back(std::make_unique<G15::Circle>(2.3));
+    shapes.emplace_back(std::make_unique<G15::Square>(1.2));
+    shapes.emplace_back(std::make_unique<G15::Circle>(4.1));
 
     // Drawing all shapes
-    drawAllShapes(shapes);
+    drawAllShapes_G15(shapes);
 }

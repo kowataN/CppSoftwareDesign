@@ -1,5 +1,12 @@
 #include <iostream>
 
+#define NS_G15_2_START namespace G15_2 {
+#define NS_G15_2_END }
+
+NS_G15_2_START
+
+// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæŒ‡å‘ã®è§£
+
 /////////////////////////////////////////////////////////////////
 // Point.h
 struct Point
@@ -10,12 +17,12 @@ struct Point
 
 /////////////////////////////////////////////////////////////////
 // Shape.h
-class Shape_G15_2
+class Shape
 {
 public:
-    Shape_G15_2() = default;
+    Shape() = default;
 
-    virtual ~Shape_G15_2() = default;
+    virtual ~Shape() = default;
 
     virtual void draw() const = 0;
 };
@@ -25,13 +32,13 @@ public:
 //#include <Point.h>
 //#include <Shape.h>
 
-class Circle : public Shape_G15_2
+class Circle : public Shape
 {
 public:
     explicit Circle(double radius)
         : radius_(radius)
     {
-        /* “n‚³‚ê‚½”¼Œa‚Ì‘Ã“–«‚ğŒŸØ valid */
+        /* æ¸¡ã•ã‚ŒãŸåŠå¾„ã®å¦¥å½“æ€§ã‚’æ¤œè¨¼ valid */
     }
 
     double radius() const { return radius_; }
@@ -51,8 +58,8 @@ private:
 
 void Circle::draw() const
 {
-    // ‰~‚ğ•`‰æ‚·‚éˆ—‚ğÀ‘•
-    std::cout << "‰~‚ğ•`‰æ\n";
+    // å††ã‚’æç”»ã™ã‚‹å‡¦ç†ã‚’å®Ÿè£…
+    std::cout << "å††ã‚’æç”»\n";
 }
 
 /////////////////////////////////////////////////////////////////
@@ -60,13 +67,13 @@ void Circle::draw() const
 //#include <Shape.h>
 //#include <Point.h>
 
-class Square : public Shape_G15_2
+class Square : public Shape
 {
 public:
     explicit Square(double side)
         : side_(side)
     {
-        /* “n‚³‚ê‚½•Ó‚Ì’·‚³‚Ì‘Ã“–«‚ğŒŸØ */
+        /* æ¸¡ã•ã‚ŒãŸè¾ºã®é•·ã•ã®å¦¥å½“æ€§ã‚’æ¤œè¨¼ */
     }
 
     double side() const { return side_; }
@@ -86,28 +93,32 @@ private:
 
 void Square::draw() const
 {
-    // ³•ûŒ`‚ğ•`‰æ‚·‚éˆ—‚ğÀ‘•
-    std::cout << "³•ûŒ`‚ğ•`‰æ\n";
+    // æ­£æ–¹å½¢ã‚’æç”»ã™ã‚‹å‡¦ç†ã‚’å®Ÿè£…
+    std::cout << "æ­£æ–¹å½¢ã‚’æç”»\n";
 }
+
+NS_G15_2_END
 
 /////////////////////////////////////////////////////////////////
 // DrawAllShapes.h
 #include <memory>
 #include <vector>
-class Shape_G15_2;
+NS_G15_2_START
+class Shape;
+NS_G15_2_END
 
-void drawAllShapes_G15_2(std::vector<std::unique_ptr<Shape_G15_2>> const& shapes);
+void drawAllShapes_G15_2(std::vector<std::unique_ptr<G15_2::Shape>> const& shapes);
 
 /////////////////////////////////////////////////////////////////
 // DrawAllShapes.cpp
 //#include <DrawAllShapes.h>
 //#include <Shape.h>
 
-void drawAllShapes_G15_2(std::vector<std::unique_ptr<Shape_G15_2>> const& shapes)
+void drawAllShapes_G15_2(std::vector<std::unique_ptr<G15_2::Shape>> const& shapes)
 {
     for (auto const& shape : shapes)
     {
-        //shape->draw(); // —áŠO‚ª”­¶‚·‚é
+        shape->draw();
     }
 }
 
@@ -122,13 +133,13 @@ void Guideline15_2()
 {
     std::cout << "\nGuideline15_2 ---------\n";
 
-    using Shapes = std::vector<std::unique_ptr<Shape_G15_2>>;
+    using Shapes = std::vector<std::unique_ptr<G15_2::Shape>>;
 
     // Creating some shapes
     Shapes shapes{};
-    shapes.emplace_back(std::make_unique<Circle>(2.3));
-    shapes.emplace_back(std::make_unique<Square>(1.2));
-    shapes.emplace_back(std::make_unique<Circle>(4.1));
+    shapes.emplace_back(std::make_unique<G15_2::Circle>(2.3));
+    shapes.emplace_back(std::make_unique<G15_2::Square>(1.2));
+    shapes.emplace_back(std::make_unique<G15_2::Circle>(4.1));
 
     // Drawing all shapes
     drawAllShapes_G15_2(shapes);
