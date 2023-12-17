@@ -5,6 +5,9 @@
 #include <memory>
 #include <vector>
 
+// 文字コード設定用に追加
+#include <windows.h>
+
 #include "Guideline2/Guideline2.h"
 #include "Guideline14/Guideline14.h"
 #include "Guideline15/Guideline15.h"
@@ -12,6 +15,9 @@
 
 int main()
 {
+    // 文字コードをUTF-8に変更
+    SetConsoleOutputCP(65001);
+
     Guideline2();
     Guideline14();
     Guideline15();
