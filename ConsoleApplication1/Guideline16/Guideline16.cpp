@@ -1,9 +1,11 @@
 #include <iostream>
+#include <format>
 
-#define NS_G16_START namespace G16 {
-#define NS_G16_END }
+#define GUIDELINE_NAME "Guideline16"
+#define NS_START namespace G16 {
+#define NS_END }
 
-NS_G16_START
+NS_START
 
 /////////////////////////////////////////////////////////////////
 // ShapeVisitor.h
@@ -100,16 +102,16 @@ public:
     // Possibly more visit() functions, one for each concrete shape
 };
 
-NS_G16_END
+NS_END
 
 
 /////////////////////////////////////////////////////////////////
 // DrawAllShapes.h
 #include <memory>
 #include <vector>
-NS_G16_START
+NS_START
 class Shape;
-NS_G16_END
+NS_END
 
 void drawAllShapes_G16(std::vector<std::unique_ptr<G16::Shape>> const& shapes);
 
@@ -139,7 +141,7 @@ void drawAllShapes_G16(std::vector<std::unique_ptr<G16::Shape>> const& shapes)
 
 void Guideline16()
 {
-    std::cout << "\nGuideline16 ---------\n";
+    std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME);
 
     using Shapes = std::vector<std::unique_ptr<G16::Shape>>;
 

@@ -4,6 +4,9 @@
 #include <iostream>
 #include <string>
 #include <variant>
+#include <format>
+
+#define GUIDELINE_NAME "Guideline14"
 
 struct Print
 {
@@ -20,7 +23,7 @@ struct Print
 
 void Guideline14()
 {
-    std::cout << "\nGuideline14 ---------\n";
+    std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME);
 
     std::variant<int, double, std::string> v{};
 

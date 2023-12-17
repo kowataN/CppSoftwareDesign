@@ -1,9 +1,11 @@
 #include <iostream>
+#include <format>
 
-#define NS_G15_START namespace G15 {
-#define NS_G15_END }
+#define GUIDELINE_NAME "Guideline15"
+#define NS_START namespace G15 {
+#define NS_END }
 
-NS_G15_START
+NS_START
 
 // 手続き型プログラミングの解
 
@@ -62,13 +64,13 @@ private:
     Point center_{};
 };
 
-NS_G15_END
+NS_END
 
 /////////////////////////////////////////////////////////////////
 // DrawCircle.h
-NS_G15_START
+NS_START
 class Circle;
-NS_G15_END
+NS_END
 
 void draw_G15(G15::Circle const&);
 
@@ -84,7 +86,7 @@ void draw_G15(G15::Circle const& circle)
     std::cout << "円を描画\n";
 }
 
-NS_G15_START
+NS_START
 
 /////////////////////////////////////////////////////////////////
 // Square.h
@@ -110,13 +112,13 @@ private:
     Point center_{}; // 中心に限らず、頂点でもよ
 };
 
-NS_G15_END
+NS_END
 
 /////////////////////////////////////////////////////////////////
 // DrawSquare.h
-NS_G15_START
+NS_START
 class Square;
-NS_G15_END
+NS_END
 
 void draw_G15(G15::Square const& square);
 
@@ -136,9 +138,9 @@ void draw_G15(G15::Square const& square)
 // DrawAllShapes.h
 #include <memory>
 #include <vector>
-NS_G15_START
+NS_START
 class Shape;
-NS_G15_END
+NS_END
 
 void drawAllShapes_G15(std::vector<std::unique_ptr<G15::Shape>> const& shapes);
 
@@ -173,7 +175,7 @@ void drawAllShapes_G15(std::vector<std::unique_ptr<G15::Shape>> const& shapes)
 
 void Guideline15()
 {
-    std::cout << "\nGuideline15 ---------\n";
+    std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME);
 
     using Shapes = std::vector<std::unique_ptr<G15::Shape>>;
 

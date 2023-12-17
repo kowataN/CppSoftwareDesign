@@ -1,9 +1,11 @@
 #include <iostream>
+#include <format>
 
-#define NS_G15_2_START namespace G15_2 {
-#define NS_G15_2_END }
+#define GUIDELINE_NAME "Guideline15_2"
+#define NS_START namespace G15_2 {
+#define NS_END }
 
-NS_G15_2_START
+NS_START
 
 // オブジェクト指向の解
 
@@ -97,15 +99,15 @@ void Square::draw() const
     std::cout << "正方形を描画\n";
 }
 
-NS_G15_2_END
+NS_END
 
 /////////////////////////////////////////////////////////////////
 // DrawAllShapes.h
 #include <memory>
 #include <vector>
-NS_G15_2_START
+NS_START
 class Shape;
-NS_G15_2_END
+NS_END
 
 void drawAllShapes_G15_2(std::vector<std::unique_ptr<G15_2::Shape>> const& shapes);
 
@@ -131,7 +133,7 @@ void drawAllShapes_G15_2(std::vector<std::unique_ptr<G15_2::Shape>> const& shape
 
 void Guideline15_2()
 {
-    std::cout << "\nGuideline15_2 ---------\n";
+    std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME);
 
     using Shapes = std::vector<std::unique_ptr<G15_2::Shape>>;
 

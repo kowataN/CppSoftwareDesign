@@ -12,6 +12,7 @@
 #include "Guideline14/Guideline14.h"
 #include "Guideline15/Guideline15.h"
 #include "Guideline16/Guideline16.h"
+#include "Guideline17/Guideline17.h"
 
 int main()
 {
@@ -23,6 +24,8 @@ int main()
     Guideline15();
     Guideline15_2();
     Guideline16();
+    Guideline17();
+    Guideline17_2();
 
     _getch();
 
