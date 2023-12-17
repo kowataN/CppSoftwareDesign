@@ -26,7 +26,7 @@ public:
     explicit Circle(double radius)
         : radius_(radius)
     {
-        /* “n‚³‚ê‚½”¼Œa‚Ì‘Ã“–«‚ðŒŸØ */
+        /* æ¸¡ã•ã‚ŒãŸåŠå¾„ã®å¦¥å½“æ€§ã‚’æ¤œè¨¼ */
     }
 
     double radius() const { return radius_; }
@@ -47,7 +47,7 @@ public:
     explicit Square(double side)
         : side_(side)
     {
-        /* “n‚³‚ê‚½•Ó‚Ì’·‚³‚Ì‘Ã“–«‚ðŒŸØ */
+        /* æ¸¡ã•ã‚ŒãŸè¾ºã®é•·ã•ã®å¦¥å½“æ€§ã‚’æ¤œè¨¼ */
     }
 
     double side() const { return side_; }
@@ -79,7 +79,7 @@ using Shapes = std::vector<Shape>;
 // Draw.h
 //#include <Circle.h>
 //#include <Square.h>
-//#include /* ‰½‚ç‚©‚ÌƒOƒ‰ƒtƒBƒbƒNƒ‰ƒCƒuƒ‰ƒŠ */
+//#include /* ä½•ã‚‰ã‹ã®ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ãƒ©ã‚¤ãƒ–ãƒ©ãƒª */
 
 NS_START
 

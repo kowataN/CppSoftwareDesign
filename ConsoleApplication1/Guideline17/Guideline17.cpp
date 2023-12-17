@@ -37,11 +37,11 @@ void Guideline17()
 
     std::variant<int, double, std::string> v{};
 
-    v = 42;         // variant‚Éint‚Ì42‚ğ‘ã“ü
-    v = 3.14;       // variant‚Édouble‚Ì3.14‚ğ‘ã“ü
-    v = 2.71F;      // variant‚Éfloat‚ğ‘ã“üAdouble‚ÖŠiã‚°‚³‚ê‚é
-    v = "Bjarne";   // variant‚É•¶š—ñ‚ğ"Bjarne"‘ã“ü
-    v = 43;         // variant‚Éint‚Ì43‚ğ‘ã“ü
+    v = 42;         // variantã«intã®42ã‚’ä»£å…¥
+    v = 3.14;       // variantã«doubleã®3.14ã‚’ä»£å…¥
+    v = 2.71F;      // variantã«floatã‚’ä»£å…¥ã€doubleã¸æ ¼ä¸Šã’ã•ã‚Œã‚‹
+    v = "Bjarne";   // variantã«æ–‡å­—åˆ—ã‚’"Bjarne"ä»£å…¥
+    v = 43;         // variantã«intã®43ã‚’ä»£å…¥
 
     //int const i = std::get<int>(v);
 
