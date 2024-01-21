@@ -8,6 +8,7 @@
 #define GUIDELINE_NAME "Guideline17"
 #define NS_GUIDELINE_START namespace G17 {
 #define NS_END }
+#define CLASS_TITLE std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME)
 
 NS_GUIDELINE_START
 
@@ -33,7 +34,7 @@ NS_END
 
 void Guideline17()
 {
-    std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME);
+    CLASS_TITLE;
 
     std::variant<int, double, std::string> v{};
 

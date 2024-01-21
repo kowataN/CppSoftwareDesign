@@ -7,6 +7,7 @@
 #include <format>
 
 #define GUIDELINE_NAME "Guideline14"
+#define CLASS_TITLE std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME)
 
 struct Print
 {
@@ -23,7 +24,7 @@ struct Print
 
 void Guideline14()
 {
-    std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME);
+    CLASS_TITLE;
 
     std::variant<int, double, std::string> v{};
 

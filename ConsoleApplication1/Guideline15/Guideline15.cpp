@@ -4,6 +4,7 @@
 #define GUIDELINE_NAME "Guideline15"
 #define NS_START namespace G15 {
 #define NS_END }
+#define CLASS_TITLE std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME)
 
 NS_START
 
@@ -175,7 +176,7 @@ void drawAllShapes_G15(std::vector<std::unique_ptr<G15::Shape>> const& shapes)
 
 void Guideline15()
 {
-    std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME);
+    CLASS_TITLE;
 
     using Shapes = std::vector<std::unique_ptr<G15::Shape>>;
 

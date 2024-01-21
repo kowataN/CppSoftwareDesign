@@ -5,6 +5,7 @@
 #define GUIDELINE_NAME "Guideline17_2"
 #define NS_START namespace G17_2 {
 #define NS_END }
+#define CLASS_TITLE std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME)
 
 NS_START
 
@@ -130,7 +131,7 @@ void drawAllShapes(Shapes const& shapes)
 
 void Guideline17_2()
 {
-    std::cout << std::format("\n {:-^25} \n", GUIDELINE_NAME);
+    CLASS_TITLE;
 
     Shapes shapes;
 
