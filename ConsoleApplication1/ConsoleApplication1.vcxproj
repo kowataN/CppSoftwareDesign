@@ -149,6 +149,7 @@
     <ClCompile Include="Guideline16\Guideline16.cpp" />
     <ClCompile Include="Guideline17\Guideline17.cpp" />
     <ClCompile Include="Guideline17\Guideline17_2.cpp" />
+    <ClCompile Include="Guideline18\Guideline18.cpp" />
     <ClCompile Include="Guideline2\Guideline2.cpp" />
     <ClCompile Include="Guideline9\Guideline9.cpp" />
     <ClCompile Include="Main.cpp">
@@ -162,6 +163,7 @@
     <ClInclude Include="Guideline15\Guideline15.h" />
     <ClInclude Include="Guideline16\Guideline16.h" />
     <ClInclude Include="Guideline17\Guideline17.h" />
+    <ClInclude Include="Guideline18\Guideline18.h" />
     <ClInclude Include="Guideline2\ConferenceTicket.h" />
     <ClInclude Include="Guideline2\CppBook.h" />
     <ClInclude Include="Guideline2\Guideline2.h" />
