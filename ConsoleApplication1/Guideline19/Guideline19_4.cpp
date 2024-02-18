@@ -40,7 +40,7 @@ public:
 		/* 渡された半径の妥当性を検証 nullチェック*/
 	}
 
-	void draw() const override
+	void draw(/* 何らかの引数 */) const override
 	{
 		drawer_->draw(*this /* 何らかの引数 */);
 	}
@@ -54,12 +54,12 @@ private:
 
 /////////////////////////////////////////////////////////////////
 // DrawSquareStrategy.h
-class Squre;
+class Square;
 class DrawSquareStrategy
 {
 public:
 	virtual ~DrawSquareStrategy() = default;
-	virtual void draw(Square const& circle /* 何らかの引数 */) const = 0;
+	virtual void draw(Square const& square /* 何らかの引数 */) const = 0;
 };
 
 /////////////////////////////////////////////////////////////////
@@ -69,7 +69,7 @@ class Square : public Shape
 public:
 	explicit Square(double side, std::unique_ptr<DrawSquareStrategy> drawer)
 		: side_(side)
-		, drawer_(drawer)
+		, drawer_(std::move(drawer))
 	{
 		/* 渡された辺の長さの妥当性を検証 */
 	}
