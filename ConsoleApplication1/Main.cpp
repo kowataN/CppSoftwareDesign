@@ -17,23 +17,25 @@
 #include "Guideline21/Guideline21.h"
 #include "Guideline22/Guideline22.h"
 #include "Guideline23/Guideline23.h"
+#include "Guideline24/Guideline24.h"
 
 int main()
 {
     // 文字コードをUTF-8に変更
     SetConsoleOutputCP(65001);
 
-    Guideline2();
-    Guideline14();
-    Guideline15();
-    Guideline15_2();
-    Guideline16();
-    Guideline17();
-    Guideline17_2();
-    Guideline18();
-    Guideline21();
-    Guideline22();
-    Guideline23();
+    //Guideline2();
+    //Guideline14();
+    //Guideline15();
+    //Guideline15_2();
+    //Guideline16();
+    //Guideline17();
+    //Guideline17_2();
+    //Guideline18();
+    //Guideline21();
+    //Guideline22();
+    //Guideline23();
+    Guideline24();
 
     _getch();
 
