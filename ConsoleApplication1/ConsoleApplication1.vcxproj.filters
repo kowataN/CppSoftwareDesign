@@ -13,210 +13,135 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline9">
-      <UniqueIdentifier>{77f34144-c486-4960-8e50-9c76ba29b3e9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline2">
-      <UniqueIdentifier>{65debb40-c922-4b70-b46a-4a799c3b97e5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline9">
-      <UniqueIdentifier>{4d7976a6-b151-4ff2-8423-f17e8b570bf7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline2">
-      <UniqueIdentifier>{3e69e7a2-0523-4502-8479-9df48f1fda00}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline11">
-      <UniqueIdentifier>{8be3f2d2-247d-4098-9fd0-bd74be30ffd6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline11">
-      <UniqueIdentifier>{43bb971c-8d34-408f-a253-71da94fabbfd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline12">
-      <UniqueIdentifier>{0a9b21c9-6b8a-40fc-bdab-78eab84fb1d0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline12">
-      <UniqueIdentifier>{acd39ed7-460b-4c2a-a67d-bee7c6f98327}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline14">
-      <UniqueIdentifier>{8eb2fc5c-65b2-4c7f-8779-526b2d412963}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline14">
-      <UniqueIdentifier>{7661f723-24ac-4f1f-a842-69dc102fc512}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline15">
-      <UniqueIdentifier>{d36efd2d-f739-4459-a94a-fb8989e574a1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline15">
-      <UniqueIdentifier>{23a930fe-ccfa-429f-951c-73c3894d5bbb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline16">
-      <UniqueIdentifier>{6e4179cd-b844-4663-9482-d50c05aaf8ea}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline16">
-      <UniqueIdentifier>{a7efa343-f339-4fb0-9890-15d70ac3d9c3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline17">
-      <UniqueIdentifier>{7f13e1be-3aba-4291-9254-871578fdd147}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline17">
-      <UniqueIdentifier>{29acc12c-29c7-46ff-8600-b95499ef01bd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline18">
-      <UniqueIdentifier>{1a3f26b0-878a-4a92-8b06-92d9574c29a2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline18">
-      <UniqueIdentifier>{db95f239-28bc-4449-9281-41de9d599dc9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline19">
-      <UniqueIdentifier>{f1ddd691-3267-45da-897e-bdb1eb1eeb3e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline19">
-      <UniqueIdentifier>{19eb2f21-829d-4a00-a070-6eba16c5a67d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guidelline21">
-      <UniqueIdentifier>{de1d5d0e-cee3-4433-b776-8d89a0f5f1cc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline21">
-      <UniqueIdentifier>{46a53ace-9870-4a8b-9a52-894cdab01c55}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline22">
-      <UniqueIdentifier>{74c34293-4a9a-4404-b0b4-3cd41ec0ac0f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline22">
-      <UniqueIdentifier>{3149d544-8e13-4d1f-a2f1-af1c8191a4a3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline23">
-      <UniqueIdentifier>{b0df13f5-4eae-42fd-8c82-11b8137a9605}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline23">
-      <UniqueIdentifier>{1fc94835-515b-4002-9573-9921fc9a6928}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Guideline24">
-      <UniqueIdentifier>{c74767fe-c5ed-47ce-9f3b-62beae8a138f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Guideline24">
-      <UniqueIdentifier>{36bcb414-fa43-44cb-b2a4-973c79114340}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Guideline2\ConferenceTicket.h">
-      <Filter>ヘッダー ファイル\Guideline2</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline2\CppBook.h">
-      <Filter>ヘッダー ファイル\Guideline2</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline2\Item.h">
-      <Filter>ヘッダー ファイル\Guideline2</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline2\Money.h">
-      <Filter>ヘッダー ファイル\Guideline2</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline9\Guideline9.h">
-      <Filter>ヘッダー ファイル\Guideline9</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline2\Guideline2.h">
-      <Filter>ヘッダー ファイル\Guideline2</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline12\Guideline12.h">
-      <Filter>ヘッダー ファイル\Guideline12</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline11\Guideline11.h">
-      <Filter>ヘッダー ファイル\Guideline11</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline14\Guideline14.h">
-      <Filter>ヘッダー ファイル\Guideline14</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline15\Guideline15.h">
-      <Filter>ヘッダー ファイル\Guideline15</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline16\Guideline16.h">
-      <Filter>ヘッダー ファイル\Guideline16</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline17\Guideline17.h">
-      <Filter>ヘッダー ファイル\Guideline17</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline18\Guideline18.h">
-      <Filter>ヘッダー ファイル\Guideline18</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline19\Guideline19.h">
-      <Filter>ヘッダー ファイル\Guideline19</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline21\Guideline21.h">
-      <Filter>ヘッダー ファイル\Guideline21</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline22\Guideline22.h">
-      <Filter>ヘッダー ファイル\Guideline22</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline23\Guideline23.h">
-      <Filter>ヘッダー ファイル\Guideline23</Filter>
-    </ClInclude>
-    <ClInclude Include="Guideline24\Guideline24.h">
-      <Filter>ヘッダー ファイル\Guideline24</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Guideline9\Guideline9.cpp">
-      <Filter>ソース ファイル\Guideline9</Filter>
-    </ClCompile>
     <ClCompile Include="Guideline2\Guideline2.cpp">
-      <Filter>ソース ファイル\Guideline2</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Guideline12\Guideline12.cpp">
-      <Filter>ソース ファイル\Guideline12</Filter>
+    <ClCompile Include="Guideline9\Guideline9.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline11\Guideline11.cpp">
-      <Filter>ソース ファイル\Guideline11</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Guideline14\Guideline14.cpp">
-      <Filter>ソース ファイル\Guideline14</Filter>
+    <ClCompile Include="Guideline12\Guideline12.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline15\Guideline15.cpp">
-      <Filter>ソース ファイル\Guideline15</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline15\Guideline15_2.cpp">
-      <Filter>ソース ファイル\Guideline15</Filter>
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Guideline14\Guideline14.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline16\Guideline16.cpp">
-      <Filter>ソース ファイル\Guideline16</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline17\Guideline17.cpp">
-      <Filter>ソース ファイル\Guideline17</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline17\Guideline17_2.cpp">
-      <Filter>ソース ファイル\Guideline17</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline18\Guideline18.cpp">
-      <Filter>ソース ファイル\Guideline18</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline19\Guideline19.cpp">
-      <Filter>ソース ファイル\Guideline19</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline19\Guideline19_2.cpp">
-      <Filter>ソース ファイル\Guideline19</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline19\Guideline19_3.cpp">
-      <Filter>ソース ファイル\Guideline19</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline19\Guideline19_4.cpp">
-      <Filter>ソース ファイル\Guideline19</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline21\Guideline21.cpp">
-      <Filter>ソース ファイル\Guidelline21</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline21\Guideline21_2.cpp">
-      <Filter>ソース ファイル\Guidelline21</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline22\Guideline22.cpp">
-      <Filter>ソース ファイル\Guideline22</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline23\Guideline23.cpp">
-      <Filter>ソース ファイル\Guideline23</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Guideline24\Guideline24.cpp">
-      <Filter>ソース ファイル\Guideline24</Filter>
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="Guideline25\Guideline25.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Guideline25\Guideline25.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\ConferenceTicket.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\CppBook.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\Guideline2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\Item.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline2\Money.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline9\Guideline9.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline11\Guideline11.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline12\Guideline12.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline14\Guideline14.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline15\Guideline15.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline16\Guideline16.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline17\Guideline17.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline18\Guideline18.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline19\Guideline19.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline21\Guideline21.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline22\Guideline22.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline23\Guideline23.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Guideline24\Guideline24.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

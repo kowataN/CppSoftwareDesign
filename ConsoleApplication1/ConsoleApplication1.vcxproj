@@ -159,6 +159,7 @@
     <ClCompile Include="Guideline22\Guideline22.cpp" />
     <ClCompile Include="Guideline23\Guideline23.cpp" />
     <ClCompile Include="Guideline24\Guideline24.cpp" />
+    <ClCompile Include="Guideline25\Guideline25.cpp" />
     <ClCompile Include="Guideline2\Guideline2.cpp" />
     <ClCompile Include="Guideline9\Guideline9.cpp" />
     <ClCompile Include="Main.cpp">
@@ -178,12 +179,16 @@
     <ClInclude Include="Guideline22\Guideline22.h" />
     <ClInclude Include="Guideline23\Guideline23.h" />
     <ClInclude Include="Guideline24\Guideline24.h" />
+    <ClInclude Include="Guideline25\Guideline25.h" />
     <ClInclude Include="Guideline2\ConferenceTicket.h" />
     <ClInclude Include="Guideline2\CppBook.h" />
     <ClInclude Include="Guideline2\Guideline2.h" />
     <ClInclude Include="Guideline2\Item.h" />
     <ClInclude Include="Guideline2\Money.h" />
     <ClInclude Include="Guideline9\Guideline9.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
