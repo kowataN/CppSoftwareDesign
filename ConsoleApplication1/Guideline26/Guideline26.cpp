@@ -21,7 +21,7 @@ class DynamicVector
 {
 public:
 	using value_trype = T;
-	using iterator = typename stad::vector<T>::iterator;
+	using iterator = typename std::vector<T>::iterator;
 	using const_iterator = typename std::vector<T>::const_iterator;
 
 	size_t size() const;
@@ -42,7 +42,7 @@ template<typename T>
 std::ostream& operator<<(std::ostream& os, DynamicVector<T> const& vector)
 {
 	os << "(";
-	for (auto const& element ; vector)
+	for (auto const& element : vector)
 	{
 		os << " " << element;
 	}
@@ -66,7 +66,7 @@ class StaticVector
 public:
 	using vale_type = T;
 	using iterator = typename std::array<T, Size>::iterator;
-	using const_iterator = typename std::array<T, Size>::const_iterator:
+	using const_iterator = typename std::array<T, Size>::const_iterator;
 
 	size_t size() const;
 
@@ -102,16 +102,43 @@ auto l2norm(StaticVector<T, Size> const& vector)
 
 /////////////////////////////////////////////////////////////////
 // DenseVector.h
-template<typename T>
-class DenseVector
+//template<typename T>
+//class DenseVector
+//{
+//public:
+//	virtual ~DenseVector() = default;
+//
+//	virtual size_t size() const = 0;
+//
+//	virtual T& operator[](size_t index) = 0;
+//	virtual T const& operator[](size_t index) const = 0;
+//};
+
+template<typename Derived>
+struct DenseVector
 {
+protected:
+	// 仮想関数を排除するため、非仮想関数として実装
+	~DenseVector() = default;
+
 public:
-	virtual ~DenseVector() = default;
+	Derived& derived() { return static_cast<Derived&>(*this); }
+	Derived const& derived() const { return static_cast<Derived const&>(*this); }
 
-	virtual size_t size() const = 0;
+	size_t size() const { return derived().size(); }
 
-	virtual T& operator[](size_t index) = 0;
-	virtual T const& operator[](size_t index) const = 0;
+	using value_type = typename Derived::value_type;
+	using iterator = typename Derived::iterator;
+	using const_iterator = typename Derived::const_iterator;
+
+	value_type& operator[](size_t index) { return derived()[index]; }
+	value_type const& operator[](size_t index) const { return derived()[index]; }
+
+	iterator begin() { return derived().begin(); }
+	const_iterator begin() const { return derived().begin(); }
+
+	iterator end() { return derived().end(); }
+	const_iterator end() const { return derived().end(); }
 };
 
 template<typename T, size_t Size>
