@@ -46,7 +46,7 @@ struct Printable
 
 /////////////////////////////////////////////////////////////////
 // Swappable.h
-template<typename Deived>
+template<typename Derived>
 struct Swappable
 {
 	friend void swap(Derived& lhs, Derived& rhs)
@@ -58,8 +58,9 @@ struct Swappable
 
 /////////////////////////////////////////////////////////////////
 // StrongType.h
-template<typename T, typename Tag>
-struct StrongType : private Addable<StrongType<T, Tag>>
+template<typename T, typename Tag, template<typename> class... Skills>
+struct StrongType
+	: private Skills<StrongType<T, Tag, Skills...>>...
 {
 public:
 	using value_typ = T;
