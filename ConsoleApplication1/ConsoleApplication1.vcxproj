@@ -163,6 +163,7 @@
     <ClCompile Include="Guideline26\Guideline26.cpp" />
     <ClCompile Include="Guideline27\Guideline27.cpp" />
     <ClCompile Include="Guideline28\Guideline28.cpp" />
+    <ClCompile Include="Guideline29\Guideline29.cpp" />
     <ClCompile Include="Guideline2\Guideline2.cpp" />
     <ClCompile Include="Guideline9\Guideline9.cpp" />
     <ClCompile Include="Main.cpp">
@@ -186,6 +187,7 @@
     <ClInclude Include="Guideline26\Guideline26.h" />
     <ClInclude Include="Guideline27\Guideline27.h" />
     <ClInclude Include="Guideline28\Guideline28.h" />
+    <ClInclude Include="Guideline29\Guideline29.h" />
     <ClInclude Include="Guideline2\ConferenceTicket.h" />
     <ClInclude Include="Guideline2\CppBook.h" />
     <ClInclude Include="Guideline2\Guideline2.h" />
