@@ -165,6 +165,7 @@
     <ClCompile Include="Guideline28\Guideline28.cpp" />
     <ClCompile Include="Guideline29\Guideline29.cpp" />
     <ClCompile Include="Guideline2\Guideline2.cpp" />
+    <ClCompile Include="Guideline30\Guideline30.cpp" />
     <ClCompile Include="Guideline9\Guideline9.cpp" />
     <ClCompile Include="Main.cpp">
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdcpp20</LanguageStandard>
@@ -193,6 +194,7 @@
     <ClInclude Include="Guideline2\Guideline2.h" />
     <ClInclude Include="Guideline2\Item.h" />
     <ClInclude Include="Guideline2\Money.h" />
+    <ClInclude Include="Guideline30\Guideline30.h" />
     <ClInclude Include="Guideline9\Guideline9.h" />
   </ItemGroup>
   <ItemGroup>
